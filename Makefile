@@ -3,6 +3,9 @@
 # Lab 1 - 8 Bit ISA Simulator
 # 3/3/17
 
+#git commit
+#git push origin master
+
 build:
 	gcc -o simulator main.c
 
@@ -11,6 +14,3 @@ test: build
 
 clean:
 	rm -f simulator
-
-git-push:
-	git push origin master
