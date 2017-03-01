@@ -12,6 +12,5 @@ test: build
 clean:
 	rm -f simulator
 
-git:
-	git commit
+git-push:
 	git push origin master
