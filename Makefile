@@ -9,8 +9,17 @@
 build:
 	gcc -o simulator main.c
 
-test: build
-	./simulator test_program
+test-load-print1: build
+	./simulator test-load-print1
+
+test-load-print2: build
+	./simulator test-load-print2
+
+test-add-sub: build
+	./simulator test-add-sub
+
+test-cmp: build
+	./simulator test-cmp
 
 clean:
 	rm -f simulator
