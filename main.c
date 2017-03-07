@@ -52,6 +52,7 @@ void ISA_sub(){
     *dest_reg = *src_reg - *trg_reg;
 }
 
+//Load immediate value into register
 void ISA_li(){
     char *dest_reg = decode_register(lineBuffer[2], lineBuffer[3]);
     char immediate_value = 0;
@@ -77,8 +78,8 @@ void ISA_prnt(){
         printf("%d\n",(*src_reg));
         fflush(stdout);
     }
-    if(lineBuffer[6] == '1'){ //Print as hexadecimal
-        printf("%x\n",(*src_reg) & 0xFF);
+    if(lineBuffer[6] == '1'){ //Print as 8 bit hexadecimal
+        printf("%X\n",(*src_reg) & 0xFF);
         fflush(stdout);
     }
     if(lineBuffer[7] == '1'){ //Print as ASCII character
@@ -107,6 +108,7 @@ int main(int argc, char *argv[]){
 
         if(file == NULL){
             printf("File \"%s\" not found!\n", argv[1]);
+            printf("\n---END OF SIMULATION---\n");
             fflush(stdout);
             return 0;
         }
