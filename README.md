@@ -1,7 +1,7 @@
 # cpeg324-lab1
-CPEG 324 - Lab 1
+CPEG 324 - Lab 1, 8 bit Calculator ISA Simulator
 
-The goal of this lab was for us to implement our own 8 bit ISA simulator. The translated binary code for the test benches and the expected outputs are given below.
+The goal of this lab was for us to implement our own 8 bit calculator ISA simulator. The translated binary code for the test benches and the expected outputs are given below.
 Type "make build" to compile the program. Then enter "./simulator <FILENAME>" to run one of the test bench files.
 
 Each line corresponds to a binary string in the given file. Next to the line is the expected output.  
